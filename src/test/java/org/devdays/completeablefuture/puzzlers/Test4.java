@@ -4,10 +4,7 @@ import org.junit.Test;
 
 import java.util.concurrent.CompletableFuture;
 
-/**
- * @author Nikolay Kuznetsov
- * @since 2017-04-17
- */
+
 public class Test4 extends AbstractTest {
     @Test
     public void name() throws Exception {
