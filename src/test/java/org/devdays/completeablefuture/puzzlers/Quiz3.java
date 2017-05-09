@@ -7,7 +7,7 @@ import java.util.concurrent.CompletableFuture;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 import static org.awaitility.Awaitility.await;
 
-//Order of callbacks
+//Order of actions
 public class Quiz3 extends AbstractQuiz {
 
     //blue might go in front of red

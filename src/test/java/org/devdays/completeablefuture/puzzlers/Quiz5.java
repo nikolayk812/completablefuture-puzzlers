@@ -11,7 +11,7 @@ import static java.util.concurrent.CompletableFuture.allOf;
 import static java.util.concurrent.CompletableFuture.completedFuture;
 import static java.util.stream.Collectors.toList;
 
-
+//allOf() return null
 public class Quiz5 extends AbstractQuiz {
 
     @Test

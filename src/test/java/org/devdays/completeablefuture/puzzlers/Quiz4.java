@@ -9,6 +9,7 @@ import static java.lang.System.out;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 import static org.awaitility.Awaitility.await;
 
+//CompletableFuture cancel does not interrupt the thread, but Future does
 public class Quiz4 extends AbstractQuiz {
 
     @Test
