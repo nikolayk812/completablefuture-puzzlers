@@ -8,15 +8,11 @@ import java.util.concurrent.Future;
 import static java.lang.System.out;
 import static java.util.concurrent.CompletableFuture.supplyAsync;
 import static org.awaitility.Awaitility.await;
-import static org.hamcrest.core.Is.is;
-import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.assertThat;
 
-
-public class Test3 extends AbstractTest {
+public class Quiz4 extends AbstractQuiz {
 
     @Test
-    public void test_cancel_1() throws Exception {
+    public void test_future_cancel() throws Exception {
         Future<String> future = executor.submit(() -> {
             while (!Thread.currentThread().isInterrupted()) {
                 try {
@@ -36,7 +32,7 @@ public class Test3 extends AbstractTest {
     }
 
     @Test
-    public void test_cancel() throws Exception {
+    public void test_completablefuture_cancel() throws Exception {
         CompletableFuture<String> future = supplyAsync(() -> {
             while (!Thread.currentThread().isInterrupted()) {
                 try {
